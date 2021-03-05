@@ -1,131 +1,274 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anteño TV Canal Digital</title>
-    <link rel="stylesheet" href="./css/estilos.css">
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
-    <link href='https://unpkg.com/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="icon" type="image/x-icon" size ="32x32" href="./favicon.ico">
-    <link rel="icon" type="image/x-icon" size ="16x16" href="./favicon2.ico">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- tailwindcss -->
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <!-- BOXICONS -->
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+  <!-- css personalized -->
+  <link rel="stylesheet" href="./css/styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/x-icon" size ="32x32" href="./favicon.ico">
+  <link rel="icon" type="image/x-icon" size ="16x16" href="./favicon2.ico">
+  <title>Anteño TV | Canal Digital</title>
 </head>
+
 <body>
-
-    <header class="header" id="inicio">
-        <img class="hamburguer" src="img/hamburguesa.svg" alt="">
-        <nav class="menu-navegacion">
-                <a href="#inicio">Inicio</a>
-                <a href="#servicio">Historia</a>
-                <a href="#galeria">Galería</a>
-                <!-- <a href="#personas-confian">Personas que confían en nosotros</a> -->
-                <a href="#expertos">Nuestras Redes Sociales</a>
-                <a href="#footer">Más información</a>
-                <a target="_blank" href="https://form.jotform.com/210017484764051">Formulario de Contacto</a>
-        </nav>
-        <div class="contenedor head">
-            <h1 class="titulo">Anteño TV</h1>
-            <p class="copy">Canal Digital desde el Corazón de Imbabura.</p>
+  <!-- header  -->
+  <header class="text-gray-50 body-font bg-blue-500">
+    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+      <a class="flex title-font font-medium items-center text-gray-100 mb-4 md:mb-0">
+        <img src="images/Logo Anteño TV.svg" class="w-10 h-10 text-white p-2  bg-gray-50 rounded-full"
+          viewBox="0 0 24 24">
+        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+        </img>
+        <span class="ml-3 text-xl">Anteño TV</span>
+      </a>
+      <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+        <a class="mr-5 hover:text-gray-100" href="https://www.facebook.com/AntenoTVmiradiferente"
+          target="_blank">Facebook</a>
+        <a class="mr-5 hover:text-gray-100" href="https://www.youtube.com/channel/UCzigW_U4kwYEjrL-Kh_2Bcg"
+          target="_blank">YouTube</a>
+        <a class="mr-5 hover:text-gray-100" href="https://www.instagram.com/antenotvcanaldigital/"
+          target="_blank">Instagram</a>
+        <a class="mr-5 hover:text-gray-100" href="https://form.jotform.com/210017484764051" target="_blank">Contacto</a>
+      </nav>
+    </div>
+  </header>
+  <!-- end header  -->
+  <!-- hero -->
+  <section class="text-gray-600 body-font">
+    <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+      <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+        <img class="object-cover object-center rounded" alt="hero" src="images/Anteño TV Negro.png">
+      </div>
+      <div
+        class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+        <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Canal Digital de Antonio Ante para el
+          Mundo
+        </h1>
+        <p class="mb-8 leading-relaxed">Anteño TV, nació con Clases del Profe Alex, como una manera de llegar a los
+          estudiantes a travéz de las redes sociales, y después por pedido de nuestro público nos abrimos a más ámbitos
+          como el deporte,educación,cultura, y siempre mirando lo positivo de la vida y la sociedad.</p>
+        <div class="flex justify-center">
+          <a href="https://www.facebook.com/AntenoTVmiradiferente" target="_blank" rel="noopener noreferrer">
+            <button
+              class="inline-flex text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded text-lg">Facebook</button>
+          </a>
+          <a href="https://form.jotform.com/210017484764051" target="_blank" rel="noopener noreferrer">
+            <button
+              class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">Contacto</button>
+          </a>
         </div>
+      </div>
+    </div>
+  </section>
+  <!-- end hero -->
 
-    </header>
-    <main>
-        <section class="services contenedor" id="servicio">
-            <h2 class="subtitulo">Nuestra Historia</h2>
-            <div class="contenedor-servicio">
-                <img src="img/checklist.svg" alt="">
-                <div class="checklist-servicio">
-                  <div class="service">
-                    <h3 class="n-service"><span class="number">1</span>Inicios</h3>
-                    <p> Anteño TV, nació con Clases del Profe Alex, como una manera de llegar a los estudiantes a travéz de las redes sociales, y después por pedido de nuestro público nos abrimos a más ámbitos como el deporte,educación,cultura, y siempre mirando lo positivo de la vida y la sociedad. </p>
-                  </div>
-                    <div class="service">
-                        <h3 class="n-service"><span class="number">2</span>Segmentos</h3>
-                        <p> Nuestros segmentos son Personajes de Mi Tierra, Conversando con Alex, Pasión X el deporte, Especial de Reinas, Clases con el Profe Alex.</p>
-                      </div>
-                      <div class="service">
-                        <h3 class="n-service"><span class="number">3</span>Orientación</h3>
-                        <p> Canal digital orientado a la educación, cultura y deporte.</p>
-                      </div>
-                </div>
+  <!-- redes sociales -->
+  <section class="text-gray-600 body-font">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-col text-center w-full mb-20">
+        <h1 class="text-2xl font-medium title-font mb-4 text-gray-900 tracking-widest">NUESTRAS REDES SOCIALES</h1>
+        <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Quieres saber sobre nosotros buscanos en nuestras redes
+          sociales</p>
+      </div>
+      <div class="flex flex-wrap -m-4">
+        <div class="p-4 lg:w-1/2">
+          <div
+            class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
+            <img alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4"
+              src="https://img.icons8.com/cute-clipart/256/000000/facebook.png">
+            <div class="flex-grow sm:pl-8">
+              <h2 class="title-font font-medium text-lg text-gray-900">Facebook</h2>
+              <h3 class="text-gray-500 mb-3">Entrevistas en Vivo </h3>
+              <p class="mb-4">Encuentranos en nuestro sitio para Entrevistas en vivo y siguenos.</p>
             </div>
-        </section>
-        <section class="gallery" id="galeria">
-            <div class="contenedor">
-                <h2 class="subtitulo">Galería</h2>
-                <div class="contenedor-galeria">
-                    <img src="img/Anteño TV Negro.png" class="img-galeria" alt="Anteño TV">
-                    <img src="img/cLASES CON EL PROFE ALEX black.png" class="img-galeria" alt=" Clases con el Profe Alex">
-                    <img src="img/Pasion X El deporte.png" class="img-galeria" alt="Pasión X el Deporte">
-                    <img src="img/Logo Personajes de Mi Tierra.png" class="img-galeria" alt="Personajes de Mi Tierra">
-                    <img src="img/Logo Especial de Reinas.png" class="img-galeria" alt="Especial de Reinas">
-                    <img src="img/Logo Conversando con Alex.png" class="img-galeria" alt="Conversando con Alex">
-                </div>
+          </div>
+        </div>
+        <div class="p-4 lg:w-1/2">
+          <div
+            class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
+            <img alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4"
+              src="https://img.icons8.com/cute-clipart/256/000000/youtube.png">
+            <div class="flex-grow sm:pl-8">
+              <h2 class="title-font font-medium text-lg text-gray-900">YouTube</h2>
+              <h3 class="text-gray-500 mb-3">Programas especiales sobre educación</h3>
+              <p class="mb-4">Suscríbete a nuestro canal de YouTube para más Clases con el Profe Alex.</p>
             </div>
-        </section>
-        <div class="imagen-light">
-            <img src="img/close.svg" alt="" class="close">
-            <img src="" alt="" class="agregar-imagen">
+          </div>
         </div>
-        <section class="contenedor" id="expertos">
-            <h2 class="subtitulo">Nos puedes encontrar en :</h2>
-            <section class="experts">
-                <div class="cont-expert">
-                    <img src="img/pie_chart.svg" alt="Anteño TV Facebook">
-                    <h3 class="n-expert"><a href="https://www.facebook.com/AntenoTVmiradiferente" class="socialRedes" target="_blank">Facebook</a></h3>
-                </div>
-                <div class="cont-expert">
-                    <img src="img/search_engine.svg" alt="Anteño TV YouTube">
-                    <h3 class="n-expert"><a href="https://www.youtube.com/channel/UCzigW_U4kwYEjrL-Kh_2Bcg" class="socialRedes" target="_blank">YouTube</a></h3>
-                </div>
-                <div class="cont-expert">
-                    <img src="img/security.svg" alt="Anteño TV YouTube">
-                    <h3 class="n-expert"><a href="https://www.instagram.com/antenotvcanaldigital/" class="socialRedes" target="_blank">Instagram</a></h3>
-                </div>
-                <div class="cont-expert">
-                    <img src="img/blogger.svg" alt="Anteño TV Blogger">
-                    <h3 class="n-expert"><a href="https://canaldigitalmiradiferenteantenotv.blogspot.com/" class="socialRedes" target="_blank">Blogger</a></h3>
-                </div>
-                <div class="cont-expert">
-                    <img src="./img/phone-book.svg" alt="Contacto">
-                    <h3 class="n-expert"><a href="https://form.jotform.com/210017484764051" target="_blank" class="socialRedes">Contacto</a></h3>
-                </div>
-            </section>
-        </section>
-    </main>
+        <div class="p-4 lg:w-1/2">
+          <div
+            class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
+            <img alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4"
+              src="https://img.icons8.com/cute-clipart/128/000000/instagram-new.png">
+            <div class="flex-grow sm:pl-8">
+              <h2 class="title-font font-medium text-lg text-gray-900">Instagram</h2>
+              <h3 class="text-gray-500 mb-3">Enterate de las proximas Entrevistas mas rápido que el rayo</h3>
+              <p class="mb-4">Subimos las invitaciones de las proximas entrevistas para que las comapartas con tus
+                amigos.</p>
+            </div>
+          </div>
+        </div>
+        <div class="p-4 lg:w-1/2">
+          <div
+            class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
+            <img alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4"
+              src="https://img.icons8.com/color/128/000000/blogger.png">
+            <div class="flex-grow sm:pl-8">
+              <h2 class="title-font font-medium text-lg text-gray-900">Blogger</h2>
+              <h3 class="text-gray-500 mb-3">Post sobre el deporte y más</h3>
+              <p class="mb-4">Opiniones y articulos del deporte escritos visita nuestro blog sobre deportes.</p>
 
-    <footer id="footer">
-        <div class="contenedor footer-content">
-                <div class="contact-us">
-                    <h2 class="brand">Anteño TV </h2>
-                    <p>Desde el Corazón de Imbabura</p>
-                    <p>Web Creada por Teo</p>
-                    <p>Visita el <a href="https://form.jotform.com/210017484764051" id="formulario">formulario de contacto</a></p>
-                </div>
-                <div class="social-media">
-                    <a href="https://www.facebook.com/AntenoTVmiradiferente" class="social-media-icon">
-                        <i class='bx bxl-facebook' target="_blank"></i>
-                    </a>
-                    <a href="https://www.youtube.com/channel/UCzigW_U4kwYEjrL-Kh_2Bcg" class="social-media-icon" target="_blank">
-                        <i class='bx bxl-youtube' ></i>
-                    </a>
-                    <a href="https://www.instagram.com/antenotvcanaldigital/" class="social-media-icon" target="_blank">
-                        <i class='bx bxl-instagram' ></i>
-                    </a>
-                    <a href="https://canaldigitalmiradiferenteantenotv.blogspot.com/" class="social-media-icon" target="_blank">
-                        <i class='bx bxl-blogger'></i>
-                    </a>
-                    <a href="https://form.jotform.com/210017484764051" target="_blank" class="social-media-icon">
-                        <i class='bx bxs-contact'></i>
-                    </a>
-                </div>
+            </div>
+          </div>
         </div>
-        <div class="line"></div>
-    </footer>
-    <script src="./js/menu.js"></script>
-    <script src="./js/lightbox.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
-    <script src="./js/bienvenida.js"></script>
-    <script src="./js/alerta.js"></script>
+      </div>
+    </div>
+  </section>
+  <!-- end redes sociales  -->
+
+  <!-- galery -->
+  <section class="text-gray-600 body-font">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-col text-center w-full mb-20">
+        <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Segmentos de Anteño TV</h1>
+        <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Quieres conocer y saber sobre nuestros segmentos este es
+          el lugar indicado</p>
+      </div>
+      <div class="flex flex-wrap -m-4">
+        <div class="lg:w-1/3 sm:w-1/2 p-4">
+          <div class="flex relative">
+            <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center"
+              src="./images/Anteño TV Negro.png">
+            <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+              <h2 class="tracking-widest text-sm title-font font-medium text-blue-500 mb-1">CANAL DIGITAL</h2>
+              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Anteño TV</h1>
+              <p class="leading-relaxed">Te presentamos los segmentos de Anteño TV Canal Digital</p>
+            </div>
+          </div>
+        </div>
+        <div class="lg:w-1/3 sm:w-1/2 p-4">
+          <div class="flex relative">
+            <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center"
+              src="./images/Logo Conversando con Alex.png">
+            <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+              <h2 class="tracking-widest text-sm title-font font-medium text-blue-500 mb-1">SEGMENTOS</h2>
+              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Conversando con Alex</h1>
+              <p class="leading-relaxed">Un segmento para hablar sobre cultura, tradición y emprendimientos.</p>
+            </div>
+          </div>
+        </div>
+        <div class="lg:w-1/3 sm:w-1/2 p-4">
+          <div class="flex relative">
+            <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center"
+              src="./images/Logo Especial de Reinas.png">
+            <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+              <h2 class="tracking-widest text-sm title-font font-medium text-blue-500 mb-1">SEGMENTOS</h2>
+              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Especial de Reinas</h1>
+              <p class="leading-relaxed">Un homenaje a las Reinas de todo Imbabura y el Ecuador.</p>
+            </div>
+          </div>
+        </div>
+        <div class="lg:w-1/3 sm:w-1/2 p-4">
+          <div class="flex relative">
+            <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center"
+              src="./images/Logo Personajes de Mi Tierra.png">
+            <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+              <h2 class="tracking-widest text-sm title-font font-medium text-blue-500 mb-1">SEGMENTOS</h2>
+              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Personajes de mi Tierra</h1>
+              <p class="leading-relaxed">Un homenaje a personas que hicieron historia en el cantón Antonio Ante,
+                Imbabura y el Ecuador.</p>
+            </div>
+          </div>
+        </div>
+        <div class="lg:w-1/3 sm:w-1/2 p-4">
+          <div class="flex relative">
+            <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center"
+              src="./images/cLASES CON EL PROFE ALEX black.png">
+            <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+              <h2 class="tracking-widest text-sm title-font font-medium text-blue-500 mb-1">SEGMENTOS</h2>
+              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Clases con el Profe Alex</h1>
+              <p class="leading-relaxed">Un segmento de ejercicios y clases de educación fisica.</p>
+            </div>
+          </div>
+        </div>
+        <div class="lg:w-1/3 sm:w-1/2 p-4">
+          <div class="flex relative">
+            <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center"
+              src="./images/Pasion X El deporte.png">
+            <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+              <h2 class="tracking-widest text-sm title-font font-medium text-blue-500 mb-1">SEGMENTOS</h2>
+              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Pasión X el Deporte</h1>
+              <p class="leading-relaxed">Un espacio para hablar sobre deporte y deportistas que marcaron una época.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end galery -->
+
+  <!-- cita celebre  -->
+  <section class="text-gray-600 body-font">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="xl:w-1/2 lg:w-3/4 w-full mx-auto text-center">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="inline-block w-8 h-8 text-gray-400 mb-8"
+          viewBox="0 0 975.036 975.036">
+          <path
+            d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z">
+          </path>
+        </svg>
+        <p class="leading-relaxed text-lg">En su gran mayoría, los medios de comunicación no se conforman con
+          representar la guerra, sino que la glorifican; escogen su bando y participan en el esfuerzo bélico. La verdad
+          es que la guerra despierta fascinación casi siempre, quizá porque representa el ejemplo supremo de una
+          situación en la que, en nombre de un ideal superior, estamos dispuestos a arriesgar lo más preciado que
+          tenemos, la vida.</p>
+        <span class="inline-block h-1 w-10 rounded bg-blue-500 mt-8 mb-6"></span>
+        <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm">TZVETAN TODOROV</h2>
+        <p class="text-gray-500">FRASE REPRESENTATIVA</p>
+      </div>
+    </div>
+  </section>
+  <!-- end cita celebre -->
+  <!-- footer -->
+  <footer class="text-gray-600 body-font ">
+    <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+      <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+        <img src="./images/Logo Anteño TV.svg" class="w-10 h-10 text-white p-2 bg-gray-50 rounded-full"
+          viewBox="0 0 24 24">
+        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+        </img>
+        <span class="ml-3 text-xl">Anteño TV</span>
+      </a>
+      <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2021
+        Anteño TV —
+        <a href="https://github.com/TeoDev1611" class="text-gray-600 ml-1 text-lg  hover:text-blue-800 "
+          rel="noopener noreferrer" target="_blank">@TeoDev1611</a>
+      </p>
+      <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+        <a class="ml-3 text-gray-500 sizeicons" href="https://www.facebook.com/AntenoTVmiradiferente" target="_blank">
+          <i class='bx bxl-facebook-circle'></i>
+        </a>
+        <a class="ml-3 text-gray-500 sizeicons" href="https://www.youtube.com/channel/UCzigW_U4kwYEjrL-Kh_2Bcg"
+          target="_blank">
+          <i class='bx bxl-youtube'></i>
+        </a>
+        <a class="ml-3 text-gray-500 sizeicons" href="https://form.jotform.com/210017484764051" target="_blank">
+          <i class='bx bxl-instagram-alt'></i>
+        </a>
+      </span>
+    </div>
+  </footer>
+  <!-- end footer  -->
+
+  <!-- scripts  -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+  <script src="./js/welcome.js"></script>
 </body>
+
 </html>
